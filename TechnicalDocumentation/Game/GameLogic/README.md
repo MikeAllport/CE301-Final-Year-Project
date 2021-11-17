@@ -28,13 +28,13 @@ ILayer is a pure virtual class, extending interface. Derived classes are require
 IRenderable is a pure virtual class offering one member, onRender() which happens each frame in the Game Loop.  
   
 ### Implementation  
-[Interfaces.h](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/GameEngine/src/App)  
+[Interfaces.h](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/GameEngine/src/App)  
   
 ## IUpdateable  Overview
 A pure virtual interface providing onUpdate() method with no argumentss, for any classes who perform time independent updates per frame.  
   
 ### Implementation  
-[Interfaces.h](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/GameEngine/src/App)  
+[Interfaces.h](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/GameEngine/src/App)  
   
 ## Game Overview  
 Games sole responsibility is for the following:  

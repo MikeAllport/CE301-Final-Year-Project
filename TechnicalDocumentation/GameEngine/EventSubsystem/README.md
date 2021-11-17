@@ -38,9 +38,9 @@ Derrived classes include: KeyEvent, MouseEvent, MouseScrolledEvent, and further 
 ### Implementation  
 [Event.cpp](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/blob/master/GameEngine/src/GE/Events/Event.cpp)  
 [Event.h](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/blob/master/GameEngine/src/GE/Events/Event.h)  
-[Key Events Directory](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/GameEngine/src/GE/Events/Keys)  
-[Mouse Events Directory](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/GameEngine/src/GE/Events/Mouse)  
-[Window Events Directory](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/GameEngine/src/GE/Events/Window)  
+[Key Events Directory](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/GameEngine/src/GE/Events/Keys)  
+[Mouse Events Directory](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/GameEngine/src/GE/Events/Mouse)  
+[Window Events Directory](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/GameEngine/src/GE/Events/Window)  
   
 ### Main method identification  
 **getType()** - Returns the EventType enum of an event.  

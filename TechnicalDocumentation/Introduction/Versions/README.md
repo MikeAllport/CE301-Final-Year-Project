@@ -10,10 +10,10 @@ All released versions are uploaded and stored in this directory. Executable vers
   
 Source code is not included in the versions; however a git hash can be found below which contains the hash of the projects source code at the point in time the version was created  
   
-## [final](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/PublishedVersions/final) - git hash f856540afa035b9d3b794008192a53ffb18f98e8  
+## [final](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/PublishedVersions/final) - git hash f856540afa035b9d3b794008192a53ffb18f98e8  
 Game developed( offering the player world generation utilities with ImGui overlay. Player can select parameterized world generation and object placement. Generate world generates new world, play starts the player in the game world.  
   
-## [version 1.1.1](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/PublishedVersions/1.1.1) - git hash 7119b55b3d7f5dc7d5d7135f8cb04ffd203d84d5  
+## [version 1.1.1](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/PublishedVersions/1.1.1) - git hash 7119b55b3d7f5dc7d5d7135f8cb04ffd203d84d5  
 Test Environment:  
 - Object Picker test, successful highlighting of objects under the mouse, with console message of the unique objects id  
    
@@ -40,7 +40,7 @@ Test Environment:
 - now contains an extra hidden window which is not visible to user  
 - contains member functions for switching between main window and hidden window (changes the OpenGL drawing context)    
   
-## [version 1.1.0](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/PublishedVersions/1.0.1) - git hash 999daa4cb1b5ce2c89df19db89d0b18af43b9721    
+## [version 1.1.0](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/PublishedVersions/1.0.1) - git hash 999daa4cb1b5ce2c89df19db89d0b18af43b9721    
 Test Environment:  
 - Improved world generator test, with visualisation of noise using white to black colour representation alongside tile representation  
 - content placement, ability to place variable objects by clicking on mouse. Shows ray plane intersection picking up the mouse positions in world coordinate space  
@@ -57,7 +57,7 @@ Test Environment:
     - PoissonGenerator, creates a list of points distributed with densities using PerlinNoise for point clustering   
     - ObjectGenerator, creates a list of randomly selected objects weighted by the density values of PerlinNoise with Stochastic properties  
   
-## [version 1.0.1](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/PublishedVersions/1.0.1) - git hash 1927090838ddf2223edd031a029af6d84a8eaaac  
+## [version 1.0.1](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/PublishedVersions/1.0.1) - git hash 1927090838ddf2223edd031a029af6d84a8eaaac  
 Test Environment:  
 - Player in a procedurally generated map, camera controller responding to movements and player moving  
   
@@ -70,7 +70,7 @@ Functionality tested
 - Controller class created for associating key presses with actions i.e character movement, camera movement  
 - Vector2D class created for standard vector math  
    
-## [Version 0.9.9](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/PublishedVersions/0.9.9) - git hash 720975310031feb37168d4837cf789473fc09344  
+## [Version 0.9.9](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/PublishedVersions/0.9.9) - git hash 720975310031feb37168d4837cf789473fc09344  
 Test Environment:  
 - World Generation test, first version on PCG terrain generation providing parameterised test  
 - Mesh Renderer, most basic quad rendering  

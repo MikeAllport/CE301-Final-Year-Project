@@ -1,11 +1,11 @@
 # Game Architecture Overview
 The overall game design can be broken down into 5 subjections:  
   
-1. [Game Logic](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/Game/GameLogic#game-logic-overview) 
-2. [World Generation](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/Game/WorldGeneration#world-generation-overview)  
-3. [Game Objects](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/Game/GameObjects#game-objects-overview)  
-4. [Input Controllers](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/Game/InputControllers#input-controller-overview)  
-5. [Utilities](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/Game/Utilities#utilities-overview)  
+1. [Game Logic](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/Game/GameLogic#game-logic-overview) 
+2. [World Generation](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/Game/WorldGeneration#world-generation-overview)  
+3. [Game Objects](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/Game/GameObjects#game-objects-overview)  
+4. [Input Controllers](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/Game/InputControllers#input-controller-overview)  
+5. [Utilities](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/Game/Utilities#utilities-overview)  
   
 All relevant classes have tried to be captured in the following package diagram; however, this is not an exhaustive diagram. Some classes make use of helper cache's, enumeration classes, or realise and use GameEngine subsystems. The separate links will provide a more thorough use of implementation details.  
   

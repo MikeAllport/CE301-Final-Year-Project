@@ -4,12 +4,12 @@ The overall design of the game engine draws inspirations from open-source projec
 Subsystems can be split into the following categories:  
   
 1. Graphics  
-	1.1 [Renderers](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/GameEngine/Graphics/Renderers)  
+	1.1 [Renderers](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/GameEngine/Graphics/Renderers)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1 Renderer/BatchedRenderer  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.2 FontRenderer  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.3 Shader  
-	1.2 [Assets](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/GameEngine/Graphics/Assets)  
-2. [Application](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/GameEngine/Application)  
+	1.2 [Assets](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/GameEngine/Graphics/Assets)  
+2. [Application](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/GameEngine/Application)  
 3. Event subsystem  
 4. Utilities  
 	
@@ -21,7 +21,7 @@ This subsystem provides creation of the window context upon which OpenGL renders
 
 GE::BaseApp gives access to it's window member, containing information regarding the window dimensions. This class also gives access to two Camera instances: PerspectiveCamera and OrthographicCamera. These contain member functions for updating and obtaining the projection matrices for either perspective or orthographic projections - used in rendering. These instances are dependant upon the window, as window size is an aspect of the projections.
 
-[More information](https://cseegit.essex.ac.uk/ce301_2020/ce301_allport_michael_s/-/tree/master/TechnicalDocumentation/GameEngine/Application)
+[More information](https://github.com/MikeAllport/CE301-Final-Year-Project/tree/main/TechnicalDocumentation/GameEngine/Application)
     
 ## Event subsystem  
 To register for events, main applications can extend the GE::EventHandler class. Event categories are within GE::EventCategory namespace and can be registered for subscription using addEventCategory(GE::EventCategory) for each category needed. User must then call attachEventListener() to receive event notifications. To take action for an event, GE::EventHandler's abstract method onEvent(GE::Event) must be overridden, ensuring to check what type of event has been received to acting accordingly. Event types are listen in GE::EventType. 
