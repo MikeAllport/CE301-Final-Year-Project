@@ -1,0 +1,15 @@
+-r
+E:\c++projs\GameEngine\bin\Release-windows-x86\GameEngine\GameEngine2020\r000hs
+--stack-stitching
+--data-limit-mb=1000
+--disk-space-limit=0
+--mrte-type=java,dotnet,python
+--itt-config=frame
+--itt-config=task,event,counter
+--stackwalk=offline
+--mrte-mode=auto
+--type=cpu:counters:nostack
+--type=cpu:stack
+--interval=10
+--
+E:\c++projs\GameEngine\bin\Release-windows-x86\GameEngine\GameEngine.exe

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PropertyPageSchema
+      Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml" />
+    <AvailableItemName Include="Customrule">
+      <Targets>_Customrule</Targets>
+    </AvailableItemName>
+  </ItemGroup>
+  <PropertyGroup>
+    <ComputeCompileInputsTargets>
+      $(ComputeCompileInputsTargets);
+      ComputeCustomruleOutput;
+    </ComputeCompileInputsTargets>
+    <ComputeLinkInputsTargets>
+      $(ComputeLinkInputsTargets);
+      ComputeCustomruleOutput;
+    </ComputeLinkInputsTargets>
+    <ComputeLibInputsTargets>
+      $(ComputeLibInputsTargets);
+      ComputeCustomruleOutput;
+    </ComputeLibInputsTargets>
+  </PropertyGroup>
+  <UsingTask
+    TaskName="Customrule"
+    TaskFactory="XamlTaskFactory"
+    AssemblyName="Microsoft.Build.Tasks.v4.0">
+    <Task>$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml</Task>
+  </UsingTask>
+  <Target
+    Name="_Customrule"
+    BeforeTargets="$(CustomruleBeforeTargets)"
+    AfterTargets="$(CustomruleAfterTargets)"
+    Condition="'@(Customrule)' != ''"
+    Outputs="%(Customrule.Outputs)"
+    Inputs="%(Customrule.Identity);%(Customrule.AdditionalDependencies);$(MSBuildProjectFile)"
+    DependsOnTargets="$(CustomruleDependsOn);ComputeCustomruleOutput">
+    <ItemGroup Condition="'@(SelectedFiles)' != ''">
+      <Customrule Remove="@(Customrule)" Condition="'%(Identity)' != '@(SelectedFiles)'" />
+    </ItemGroup>
+    <ItemGroup>
+      <Customrule_tlog
+        Include="%(Customrule.Outputs)"
+        Condition="'%(Customrule.Outputs)' != '' and '%(Customrule.ExcludedFromBuild)' != 'true'">
+        <Source>@(Customrule, '|')</Source>
+        <Inputs>@(Customrule, ';')</Inputs>
+      </Customrule_tlog>
+    </ItemGroup>
+    <Message
+      Importance="High"
+      Text="%(Customrule.ExecutionDescription)" />
+    <WriteLinesToFile
+      Condition="'@(Customrule_tlog)' != '' and '%(Customrule_tlog.ExcludedFromBuild)' != 'true'"
+      File="$(TLogLocation)Customrule.write.1.tlog"
+      Lines="^%(Customrule_tlog.Source);%(Customrule_tlog.Fullpath)" />
+    <WriteLinesToFile
+      Condition="'@(Customrule_tlog)' != '' and '%(Customrule_tlog.ExcludedFromBuild)' != 'true'"
+      File="$(TLogLocation)Customrule.read.1.tlog"
+      Lines="^%(Customrule_tlog.Inputs);$(MSBuildProjectFullPath);%(Customrule_tlog.Fullpath)" />
+    <Customrule
+      Condition="'@(Customrule)' != '' and '%(Customrule.ExcludedFromBuild)' != 'true'"
+      CommandLineTemplate="%(Customrule.CommandLineTemplate)"
+      AdditionalOptions="%(Customrule.AdditionalOptions)"
+      Inputs="%(Customrule.Identity)"
+      StandardOutputImportance="High"
+      StandardErrorImportance="High" />
+  </Target>
+  <Target
+    Name="ComputeCustomruleOutput"
+    Condition="'@(Customrule)' != ''">
+    <ItemGroup>
+      <CustomruleOutputs
+        Condition="'@(Customrule)' != '' and '%(Customrule.ExcludedFromBuild)' != 'true'"
+        Include="%(Customrule.Outputs)" />
+    </ItemGroup>
+    <MakeDir Directories="@(CustomruleOutputs->'%(RootDir)%(Directory)')" />
+  </Target>
+</Project>
