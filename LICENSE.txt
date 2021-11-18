@@ -350,8 +350,10 @@ This software, GameEngine plus the game itself, and the bespoke textures made he
 	Additional None MIT conditions
 	Accreditation for any works generated or proceeded from the "Software" and it's
 	implementations should be made to the author, Michael Allport, in form of
-	licensing and any formal creditations given in software/product's the "Software"
-	has been used or based upon.
+	licensing and any formal accreditations given in the resultant software/product's that the "Software"
+	has been used or based upon. Further, all possible attempts to contact the
+	author, Michael Allport, should be made - as he would be quite interested
+	to see what his works helped to achieve!
 
 	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
